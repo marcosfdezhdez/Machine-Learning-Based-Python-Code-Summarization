@@ -1,0 +1,38 @@
+Execution Instructions:
+This project is provided as a Jupyter Notebook and can be executed in two different ways: using a pretrained model (recommended) or 
+training the model from scratch. Both options are supported by the same notebook.
+
+Recommended execution: using the pretrained model
+The notebook is designed to allow full execution without retraining the model. In this case, a pretrained model is loaded and the training phase is skipped.
+
+To run the notebook with the pretrained model, the following steps must be followed. First, open the notebook in Google Colab. Before executing the notebook,
+create a folder named "models". The folder must be located in the root directory of the execution environment (/content/models/). 
+Then upload the file named “model_final_project.pth” to the Colab environment. The file must be placed inside the folder.
+
+Once the pretrained model file is uploaded, the notebook must be executed cell by cell, starting from the first cell. 
+All cells should be run sequentially until reaching the training cell.
+
+The training cell is Cell 8, which begins with this: 
+"from torch.utils.data import DataLoader
+from torch.nn.utils.rnn import pad_sequence
+# Function to process and pad the sequences in each batch
+def collate_fn(batch): "
+
+This cell must not be executed when using the pretrained model, since the model parameters have already been learned.
+
+The cell immediately following the training cell, which computes the evaluation or test loss, must also not be executed, 
+as it depends on objects and functions defined during training.
+
+After skipping these two cells, the execution can continue normally. Only the final cell, which contains qualitative examples and sanity checks,
+should be executed. This last cell runs the inference procedure and generates natural language summaries for selected Python code snippets.
+
+Optional execution: training the model from scratch
+
+If the model is trained from scratch, all notebook cells must be executed sequentially, except for the cell that loads the pretrained model weights,
+which must be skipped. 
+Execute of course, the training, and the test loss and evaluation cell.
+
+Once training is completed, the model can be used for inference within the same session.
+
+The recommended execution environment is Google Colab using Python 3. GPU acceleration with an NVIDIA T4 is supported and recommended for training,
+although it is not strictly required. All experiments can also be executed on CPU, at the cost of longer training times.
