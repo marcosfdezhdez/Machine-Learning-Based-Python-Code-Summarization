@@ -9,5 +9,5 @@ docstring.
 The code is made on Google Colab, open the notebook on https://colab.research.google.com/drive/171C8Sbhwq4pJ_bICG3zYNWMYffkNTjhe?usp=sharing.
 
 ## Repository Contents
-This repository includes an instructions document, the code folders and a report, which deeply analyses the project, including an introduction of the goals and the characteristics, an analysis of the methodology applied, and a discussion of the results.
+This repository includes an instructions document, the code folders (which include the src, scripts and the link to the PTH file) and a report, which deeply analyses the project, including an introduction of the goals and the characteristics, an analysis of the methodology applied, and a discussion of the results.
 
