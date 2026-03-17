@@ -6,7 +6,7 @@ Recommended execution: using the pretrained model
 The notebook is designed to allow full execution without retraining the model. In this case, a pretrained model is loaded and the training phase is skipped.
 
 To run the notebook with the pretrained model, the following steps must be followed. First, open the notebook in Google Colab.
-Before executing the notebook, create a folder named "models". The folder must be located in the root directory of the execution environment (/content/models/). 
+Before executing the notebook, create a folder named "models". The folder must be located in the root directory of the execution environment /content/models/. 
 Then upload the file named “model_final_project.pth” to the Colab environment. The file must be placed inside the folder.
 
 Once the pretrained model file is uploaded, the notebook must be executed cell by cell, starting from the first cell. 
